@@ -42,8 +42,16 @@ Answer the following questions below:
 
 - Describe useEffect.  What use cases is it used for in React components?
 
+  useEffect defines a function to run after the rendering phase of a component. An example of a use case would be resetting a controlled form's values upon submit
+
 - What does useRef do?  Does a change to a ref value cause a rerender of a component?
+
+  useRef helps keep track of a value across renders. changing a ref value does not trigger a re-render
 
 - When would you use a ref? When wouldn't you use one?
 
+  You would use useRef to define a DOM object, set up/clear timers, etc.
+
 - What is a custom hook in React? When would you want to write one?
+
+  a custom hook is a piece of logic that is defined in a separate file that you can use across multiple components. You would write one when you see multiple components using a similar piece of logic so that you dont have to keep rewriting it.
